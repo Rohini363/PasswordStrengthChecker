@@ -1,0 +1,127 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #f2f2f2;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.25);
+    text-align: center;
+}
+
+input[type="password"] {
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #5a67d8;
+}
+a {
+    text-decoration: none;
+    color: #667eea;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.1em;
+    padding: 15px;
+    background-color: #f0f4ff;
+    border-radius: 8px;
+    color: #333;
+    font-size: 16px;
+}
+
+.strength-label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.strength-bar {
+    height: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    width: 100%;
+    background-color: transparent;
+    transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+/* Color coded strength classes */
+.very-weak {
+    color: #a94442;
+    background-color: #f2dede;
+}
+
+.very-weak.strength-bar {
+    background-color: #e74c3c;
+    width: 20%;
+}
+
+.weak {
+    color: #c09853;
+    background-color: #fcf8e3;
+}
+
+.weak.strength-bar {
+    background-color: #f39c12;
+    width: 40%;
+}
+
+.moderate {
+    color: #31708f;
+    background-color: #d9edf7;
+}
+
+.moderate.strength-bar {
+    background-color: #3498db;
+    width: 60%;
+}
+
+.strong {
+    color: #3c763d;
+    background-color: #dff0d8;
+}
+
+.strong.strength-bar {
+    background-color: #2ecc71;
+    width: 80%;
+}
+
+.very-strong {
+    color: #1e7e34;
+    background-color: #d4edda;
+}
+
+.very-strong.strength-bar {
+    background-color: #28a745;
+    width: 100%;
+}
+
+
